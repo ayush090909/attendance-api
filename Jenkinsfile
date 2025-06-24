@@ -13,8 +13,8 @@ node {
     clean_when_build_succeed: true,
     clean_when_build_unstable: true,
     // VCS MANAGEMENT
-    repo_https_url: "https://github.com/ayush090909/salary-api.git",
-    repo_ssh_url: "https://github.com/ayush090909/salary-api.git",
+    repo_https_url: "https://github.com/ayush090909/attendance-api.git",
+    repo_ssh_url: "https://github.com/ayush090909/attendance-api.git",
     repo_branch: "main",
     repo_url_type: "http",
     jenkins_git_creds_id: "github-cred",
@@ -51,7 +51,7 @@ node {
     jenkins_sonarqube_token_creds_id: "sonar-token",
     // Build Dockerfile
     perform_build_dockerfile: true,
-    image_name: "salary-api",
+    image_name: "attendence-api",
     dockerfile_location: "/Dockerfile",
     dockerfile_context: "",
     codeartifact_dependency: false,
@@ -70,7 +70,7 @@ node {
     artifact_publish_check: true,
     artifact_destination_type: "harbor",
     jenkins_aws_credentials_id: "aws-rajat",
-    docker_image_name: "salary-api",
+    docker_image_name: "attendence-api",
     ecr_repo_name: "ecom-notification-consumer-service",
     ecr_region: "ap-south-1",
     account_id: "543339517346",
