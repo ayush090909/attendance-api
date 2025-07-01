@@ -4,13 +4,12 @@ LABEL authors="Opstree Solutions" \
       version="v0.1.0"
 
 WORKDIR /api
-RUN pip install --upgrade pip
+
 RUN pip3 install poetry gunicorn
 
-COPY pyproject.toml poetry.lock ./
+COPY pyproject.toml poetry.lock .
 RUN poetry config virtualenvs.create false && \
     poetry install --no-root --no-interaction --no-ansi
-
 
 COPY client/ client/
 COPY models/ models/
