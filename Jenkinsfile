@@ -55,8 +55,6 @@ node {
     dockerfile_location: "/Dockerfile",
     dockerfile_context: "",
     codeartifact_dependency: false,
-    codeartifact_domain: "ecomexpress",
-    codeartifact_owner: "543339517346",
     // Image scaning
     image_scanning_check: false,
     image_tag: "latest",
