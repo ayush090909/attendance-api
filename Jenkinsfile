@@ -69,9 +69,9 @@ node {
     artifact_destination_type: "harbor",
     jenkins_aws_credentials_id: "aws-rajat",
     docker_image_name: "attendence-api",
-    ecr_repo_name: "ecom-notification-consumer-service",
+    ecr_repo_name: "",
     ecr_region: "ap-south-1",
-    account_id: "543339517346",
+    account_id: "",
 
     // Harbor Specific Parameters (NEW)
     harbor_url: "registry.ldc.opstree.dev",
