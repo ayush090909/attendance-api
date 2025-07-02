@@ -1,5 +1,5 @@
-@Library('cicid-shared-lib') _
-def cipipeline = new opstree.ci.templates.java_ci.java_ci()
+@Library('cicid-shared-lib@artifact-management') _
+def cipipeline = new opstree.ci.templates.artifact_management.artifact_management()
 node {
   cipipeline.call([
   enable_jenkins_build_param_override: true,
