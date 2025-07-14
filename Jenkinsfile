@@ -105,7 +105,7 @@ node {
     // Notification
     notification_enabled: true,
     notification_channel: "slack",
-    webhook_url_creds_id: "https://hooks.slack.com/services/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",
+    webhook_url_creds_id: "slack-token-eks-poc",
 
     
 // Optional params for custom notification mode:
