@@ -1,5 +1,5 @@
-@Library('cicid-shared-lib@artifact-management') _
-def cipipeline = new opstree.ci.templates.artifact_management.artifact_management()
+@Library('cicid-shared-lib@notification') _
+def cipipeline = new opstree.ci.templates.python_ci.python_ci()
 node {
   cipipeline.call([
   enable_jenkins_build_param_override: true,
@@ -103,8 +103,16 @@ node {
     jira_ticket_id_build_param: "jira_ticket_id",
     trigger_cd_pipeline_path: "",
     // Notification
-    notification_enabled: false,
-    notification_channel: "teams",
-    webhook_url_creds_id: "teams_webhook"
+    notification_enabled: true,
+    notification_channel: "slack",
+    webhook_url_creds_id: "https://hooks.slack.com/services/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",
+
+    
+// Optional params for custom notification mode:
+notification_mode: "custom",               // or "custom"
+resultStatus: "",                           // e.g. "PASSED", "FAILED", or any custom string
+instanceId: "",                             // e.g. build or deployment id
+action: "",                                // e.g. "deploy", "test", etc.
+slack_channel: "helpdesk-notifications"     // required only if notification_channel is slack
   ])
 }
