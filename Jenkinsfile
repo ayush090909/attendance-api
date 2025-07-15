@@ -124,6 +124,6 @@ node {
     resultStatus: "started",
     instanceId: "instance-1234",
     action: "deploy",
-    slack_channel: "#helpdesk-notifications"
+    slack_channel: "#general"
   ])
 }
