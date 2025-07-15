@@ -113,6 +113,6 @@ notification_mode: "custom",               // or "custom"
 resultStatus: "",                           // e.g. "PASSED", "FAILED", or any custom string
 instanceId: "",                             // e.g. build or deployment id
 action: "",                                // e.g. "deploy", "test", etc.
-slack_channel: "helpdesk-notifications"     // required only if notification_channel is slack
+slack_channel: "#helpdesk-notifications"     // required only if notification_channel is slack
   ])
 }
